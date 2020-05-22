@@ -1,0 +1,46 @@
+{
+  "name": "validatorexp",
+  "version": "1.0.5",
+  "description": "Express request validator with object's style response body and inspired by Laravel's Validator",
+  "author": "Olivier Esuka <oesukan@gmail.com> (https://shivammalhotraone.me)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivammalhotraone/validatorexp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shivammalhotraone/validatorexp/issues"
+  },
+  "homepage": "https://github.com/shivammalhotraone/validatorexp#readme",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --watch --coverage",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "lint": "node_modules/.bin/eslint .",
+    "lint:fix": "prettier-eslint --write '**/*.js'",
+    "build": "jest && eslint . ./ && minify src -d lib"
+  },
+  "keywords": [
+    "validatorexp",
+    "check",
+    "validator",
+    "validation",
+    "express",
+    "express-validator",
+    "request"
+  ],
+  "devDependencies": {
+    "babel-minify": "^0.5.0",
+    "coveralls": "^3.0.3",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "jest": "^24.1.0",
+    "prettier": "^1.16.4",
+    "prettier-eslint-cli": "^4.7.1"
+  },
+  "dependencies": {}
+}
